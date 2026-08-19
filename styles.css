@@ -62,6 +62,8 @@ h3 { font-size: 1.35rem; margin: 12px 0 10px; }
 .card.featured { grid-column: span 2; background: linear-gradient(135deg, #fff 0%, #f4f7ff 100%); }
 .card p { color: var(--muted); margin-bottom: 0; }
 .card .meta { margin-top: 18px; color: var(--ink); font-size: .9rem; font-weight: 650; }
+.card-link { text-decoration: none; color: inherit; display: block; }
+.card-link:hover .card { transform: translateY(-4px); }
 .tag { display: inline-block; font-size: .74rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); padding: 7px 10px; border-radius: 999px; }
 .pub-list { border-top: 1px solid var(--line); }
 .pub-list article { padding: 24px 0; border-bottom: 1px solid var(--line); }
