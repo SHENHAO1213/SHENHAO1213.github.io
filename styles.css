@@ -76,6 +76,79 @@ h3 { font-size: 1.35rem; margin: 12px 0 10px; }
 .contact-row a { color: var(--ink); font-weight: 700; }
 footer { padding: 30px 0 48px; color: var(--muted); font-size: .9rem; }
 .footer-wrap { display: flex; justify-content: space-between; gap: 18px; border-top: 1px solid var(--line); padding-top: 24px; }
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 160px;
+  padding: 8px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+  z-index: 100;
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 6px;
+}
+
+.nav-dropdown-menu a:hover {
+  background: #f3f4f6;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  display: block;
+}
+.publication-card {
+  display: flex;
+  gap: 24px;
+  padding: 22px 0;
+  border-top: 1px solid #ddd;
+}
+
+.publication-year {
+  min-width: 60px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #777;
+}
+
+.publication-content h3 {
+  margin: 0 0 7px;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.publication-authors,
+.publication-journal {
+  margin: 4px 0;
+}
+
+.publication-journal {
+  font-style: italic;
+  color: #666;
+}
+
+.publication-links {
+  margin-top: 10px;
+}
+
+.publication-links a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
 
 @media (max-width: 850px) {
   .hero { grid-template-columns: 1fr; padding-top: 62px; }
